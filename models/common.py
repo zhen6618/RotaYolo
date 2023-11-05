@@ -135,7 +135,6 @@ class RotaConv(nn.Module):
 
         self.bn_input = nn.BatchNorm2d(self.c)
         self.bn_position = nn.BatchNorm2d(self.c)
-        self.bn_input_pad = nn.BatchNorm2d(self.c)
         self.bn_fuse = nn.BatchNorm2d(self.c)
         self.bn_local = nn.BatchNorm2d(self.c)
         self.bn_global = nn.BatchNorm2d(self.c)
@@ -248,15 +247,10 @@ class RotaConv(nn.Module):
         Encoder_position_x = self.encoder_position(Encoder_position_x)
         Encoder_position_y = self.encoder_position(Encoder_position_y)
         Encoder_position = Encoder_position_x + Encoder_position_y
-
         Encoder_position = self.bn_position(Encoder_position)
-        R_input = self.bn_input_pad(R_input)
 
         R_input_fuse = R_input + Encoder_position
         R_input_fuse = self.fuse_position(R_input_fuse)
-        R_input_fuse = R_input_fuse + R_input
-        R_input_fuse = self.bn_fuse(R_input_fuse)
-        R_input_fuse = self.act(R_input_fuse)
 
         # Orientation Feature Extraction
         R_local_1 = self.m_local_1(R_input_fuse)  # local
