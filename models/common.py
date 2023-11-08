@@ -128,8 +128,10 @@ class RotaConv(nn.Module):
         self.m_local_2 = nn.Conv2d(self.c, self.c, (3, 3), stride=1, padding='same', groups=self.n, bias=False)
         self.m_local_3 = nn.Conv2d(self.c, self.c, (5, 5), stride=1, padding='same', groups=self.n, bias=False)
         self.m_global_1 = nn.Conv2d(self.c, self.c, (1, 1), stride=1, padding='same', bias=False)
-        self.m_global_2 = nn.Conv2d(self.c, self.c, (3, 3), stride=1, padding='same', bias=False)
-        self.m_global_3 = nn.Conv2d(self.c, self.c, (5, 5), stride=1, padding='same', bias=False)
+        self.m_global_2_0 = nn.Conv2d(self.c, self.c, (3, 1), stride=1, padding='same', bias=False)
+        self.m_global_2_1 = nn.Conv2d(self.c, self.c, (1, 3), stride=1, padding='same', bias=False)
+        self.m_global_3_0 = nn.Conv2d(self.c, self.c, (5, 1), stride=1, padding='same', bias=False)
+        self.m_global_3_1 = nn.Conv2d(self.c, self.c, (1, 5), stride=1, padding='same', bias=False)
         self.act = nn.SiLU()
 
         self.bn_input = nn.BatchNorm2d(self.c)
@@ -258,8 +260,10 @@ class RotaConv(nn.Module):
         R_local = self.act(R_local)
 
         R_global_1 = self.m_global_1(R_local)  # global
-        R_global_2 = self.m_global_2(R_local)
-        R_global_3 = self.m_global_3(R_local)
+        R_global_2 = self.m_global_2_0(R_local)
+        R_global_2 = self.m_global_2_1(R_global_2)
+        R_global_3 = self.m_global_3_0(R_local)
+        R_global_3 = self.m_global_3_1(R_global_3)
         R_global = R_global_1 + R_global_2 + R_global_3
         R_global = self.bn_global(R_global)
         R_global = self.act(R_global)
