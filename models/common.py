@@ -113,8 +113,8 @@ class Conv(nn.Module):
 class RotaConv(nn.Module):
     def __init__(self, c1, c2, k=1, s=1, p=None, g=1, act=True):  # ch_in, ch_out, kernel, stride, padding, groups
         super(RotaConv, self).__init__()
-        self.k = 8  # number of channels in each group
-        self.c = 64  # process channels
+        self.k = 4  # number of channels in each group
+        self.c = 32  # process channels
         self.n = int(self.c / self.k)  # number of groups
 
         self.downmap = nn.Conv2d(c2, self.c, (1, 1), stride=1, padding='same', bias=False)
