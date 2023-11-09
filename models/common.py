@@ -248,6 +248,7 @@ class RotaConv(nn.Module):
         Encoder_position_y = self.encoder_position(Encoder_position_y)
         Encoder_position = Encoder_position_x + Encoder_position_y
         Encoder_position = self.bn_position(Encoder_position)
+        Encoder_position = self.act(Encoder_position)
 
         R_input_fuse = R_input + Encoder_position
 
