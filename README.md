@@ -28,6 +28,26 @@ In oriented object detection, current representations of oriented bounding boxes
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/RRC.png" width="700px">
 </div>
 
+# Experiments
+1. Comparison with Existing OBB Representation
+<div align=center>
+<img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/OBB_Comparison.png" width="500px">
+</div>
+
+2. Comparison with Existing Convolution-Based Rotation-Sensitive Extraction Representation
+<div align=center>
+<img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/Vis_RRC.png" width="600px">
+      
+<img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/RRC_Comparison.png" width="500px">
+</div>
+
+3. Comparison with Existing Oriented Object Detectors
+<div align=center>
+<img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/Experiments_Comparison.png" width="900px">
+      
+<img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/Vis_Comparison.png" width="650px">
+</div>
+
 
 # Training
 ```
