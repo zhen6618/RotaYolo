@@ -24,12 +24,10 @@ python detect.py --weights 'weights/best.pt' --source 'datasets/DOTA/demo.png' -
 
 # Citation
 ```
-@article{zhou2023linear,
+@InProceedings{zhou2023linear,
       title={Linear Gaussian Bounding Box Representation and Ring-Shaped Rotated Convolution for Oriented Object Detection}, 
       author={Zhen Zhou and Yunkai Ma and Junfeng Fan and Zhaoyang Liu and Fengshui Jing and Min Tan},
       year={2023},
-      eprint={2311.05410},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      booktitle={arXiv preprint arXiv:2311.05410},
 }
 ```
