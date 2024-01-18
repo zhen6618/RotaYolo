@@ -2,12 +2,12 @@
 In oriented object detection, current representations of oriented bounding boxes (OBBs) often suffer from the boundary discontinuity problem. Methods of designing continuous regression losses do not essentially solve this problem. Although Gaussian bounding box (GBB) representation avoids this problem, directly regressing GBB is susceptible to numerical instability. We propose linear GBB (LGBB), a novel OBB representation. By linearly transforming the elements of GBB, LGBB avoids the boundary discontinuity problem and has high numerical stability. In addition, existing convolution-based rotation-sensitive feature extraction methods only have local receptive fields, resulting in slow feature aggregation. We propose ring-shaped rotated convolution (RRC), which adaptively rotates feature maps to arbitrary orientations to extract rotation-sensitive features under a ring-shaped receptive field, rapidly aggregating features and contextual information. Experimental results demonstrate that LGBB and RRC achieve state-of-the-art performance. Furthermore, integrating LGBB and RRC into various models effectively improves detection accuracy.
 
 # Realted Work
-1. Comparison with Existing OBB Representations
+1. Comparison with Current OBB Representations
 <div align=center>
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/OBB_Representation.png" width="800px">
 </div>
 
-2. Comparison with Existing Convolution-Based Rotation-Sensitive Extraction Methods
+2. Comparison with Current Convolution-Based Rotation-Sensitive Extraction Methods
 <div align=center>
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/Orientation_Sensitive_Feature_Extraction.png" width="350px">
 </div>
@@ -29,19 +29,19 @@ In oriented object detection, current representations of oriented bounding boxes
 </div>
 
 # Experiments
-1. Comparison with Existing OBB Representations
+1. Comparison with Current OBB Representations
 <div align=center>
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/OBB_Comparison.png" width="500px">
 </div>
 
-2. Comparison with Existing Convolution-Based Rotation-Sensitive Extraction Methods
+2. Comparison with Current Convolution-Based Rotation-Sensitive Extraction Methods
 <div align=center>
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/Vis_RRC.png" width="600px">
       
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/RRC_Comparison.png" width="500px">
 </div>
 
-3. Comparison with Existing Oriented Object Detectors
+3. Comparison with Current Oriented Object Detectors
 <div align=center>
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/Experiments_Comparison.png" width="900px">
       
