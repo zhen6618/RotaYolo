@@ -74,3 +74,7 @@ python detect.py --weights 'weights/best.pt' --source 'datasets/DOTA/demo.png' -
       booktitle={arXiv preprint arXiv:2311.05410},
 }
 ```
+
+# Acknowledgement
+[lightning-sam](https://github.com/luca-medeiros/lightning-sam?tab=readme-ov-file)
+
