@@ -76,7 +76,7 @@ python detect.py --weights 'weights/best.pt' --source 'datasets/DOTA/demo.png' -
 ```
 
 # Acknowledgement
-[lightning-sam](https://github.com/luca-medeiros/lightning-sam?tab=readme-ov-file)
+[mmrotate](https://github.com/open-mmlab/mmrotate)
 
-[segment-anything](https://github.com/facebookresearch/segment-anything)
+[yolov7](https://github.com/WongKinYiu/yolov7)
 
