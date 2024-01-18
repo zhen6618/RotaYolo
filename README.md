@@ -9,7 +9,7 @@ In oriented object detection, current representations of oriented bounding boxes
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/OBB_Representation.png" width="800px">
 </div>
 
-2. Comparison with Current Convolution-Based Rotation-Sensitive Extraction Methods
+2. Comparison with Current Convolution-Based Rotation-Sensitive Feature Extraction Methods
 <div align=center>
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/Orientation_Sensitive_Feature_Extraction.png" width="350px">
 </div>
@@ -36,7 +36,7 @@ In oriented object detection, current representations of oriented bounding boxes
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/OBB_Comparison.png" width="500px">
 </div>
 
-2. Comparison with Current Convolution-Based Rotation-Sensitive Extraction Methods
+2. Comparison with Current Convolution-Based Rotation-Sensitive Feature Extraction Methods
 <div align=center>
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/Vis_RRC.png" width="600px">
       
