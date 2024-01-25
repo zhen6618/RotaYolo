@@ -50,6 +50,13 @@ In oriented object detection, current representations of oriented bounding boxes
 <img src="https://github.com/zhen6618/RotaYolo/blob/main/figure/Vis_Comparison.png" width="650px">
 </div>
 
+## Installation
+Refer to [yolov7](https://github.com/WongKinYiu/yolov7)
+
+## Prepare Your Dataset
+[DOTA](https://captain-whu.github.io/DOTA/index.html)  
+[HRSC2016](https://sites.google.com/site/hrsc2016/)
+
 
 ## Training
 ```
