@@ -51,7 +51,7 @@ In oriented object detection, current representations of oriented bounding boxes
 </div>
 
 ## Installation
-Refer to [yolov7](https://github.com/WongKinYiu/yolov7)
+Refer to both [yolov7](https://github.com/WongKinYiu/yolov7) and [mmrotate](https://github.com/open-mmlab/mmrotate)
 
 ## Prepare Your Dataset
 [DOTA](https://captain-whu.github.io/DOTA/index.html)  
