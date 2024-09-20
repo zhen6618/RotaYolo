@@ -75,12 +75,12 @@ python detect.py --weights 'weights/best.pt' --source 'datasets/DOTA/demo.png' -
 ## Citation
 ```
 @article{ZHOU2024110677,
-title = {Linear Gaussian bounding box representation and ring-shaped rotated convolution for oriented object detection},
-journal = {Pattern Recognition},
-volume = {155},
-pages = {110677},
-year = {2024},
-author = {Zhen Zhou and Yunkai Ma and Junfeng Fan and Zhaoyang Liu and Fengshui Jing and Min Tan},
+      title = {Linear Gaussian bounding box representation and ring-shaped rotated convolution for oriented object detection},
+      journal = {Pattern Recognition},
+      volume = {155},
+      pages = {110677},
+      year = {2024},
+      author = {Zhen Zhou and Yunkai Ma and Junfeng Fan and Zhaoyang Liu and Fengshui Jing and Min Tan},
 }
 ```
 
